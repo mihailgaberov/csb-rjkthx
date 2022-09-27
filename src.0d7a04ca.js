@@ -7,6 +7,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"../_lib/requiredArgs/index.js":"j33M"}],"g6MI":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=a;var e=u(require("../_lib/toInteger/index.js")),t=u(require("../toDate/index.js")),r=u(require("../_lib/requiredArgs/index.js"));function u(e){return e&&e.__esModule?e:{default:e}}function a(u,a){(0,r.default)(2,arguments);var i=(0,t.default)(u),d=(0,e.default)(a);return isNaN(d)?new Date(NaN):d?(i.setDate(i.getDate()+d),i):i}
 },{"../_lib/toInteger/index.js":"TNzJ","../toDate/index.js":"xyyE","../_lib/requiredArgs/index.js":"j33M"}],"H99C":[function(require,module,exports) {
-"use strict";var e=t(require("date-fns/addDays"));function t(e){return e&&e.__esModule?e:{default:e}}function n(t,n){return(0,e.default)(new Date(t),n)}console.log(n("2022-09-30",1));var u=document.getElementById("dateToIncrement"),d=document.getElementById("numberOfDays"),r=document.getElementById("result");function a(e){console.log(e.target),r.textContent=e.target.value}u.addEventListener("input",a),d.addEventListener("input",a);
+"use strict";var e=t(require("date-fns/addDays"));function t(e){return e&&e.__esModule?e:{default:e}}function n(t,n){return(0,e.default)(new Date(t),n)}var u=document.getElementById("dateToIncrement"),d=document.getElementById("numberOfDays"),a=document.getElementById("result");function r(e){a.textContent=n(u.value,d.value)}u.addEventListener("input",r),d.addEventListener("input",r);
 },{"date-fns/addDays":"g6MI"}]},{},["H99C"], null)
-//# sourceMappingURL=/csb-rjkthx/src.81f28846.js.map
+//# sourceMappingURL=/csb-rjkthx/src.0d7a04ca.js.map
